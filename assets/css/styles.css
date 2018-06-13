@@ -73,6 +73,25 @@ li, a, p, figcaption {
 
 
 
+.fa {
+	color: white;
+}
+
+.fa:hover {
+	opacity: 0.5;
+}
+
+#ico-instagram, 
+#ico-linkedin {
+	font-size: 50px;
+}
+
+
+
+
+
+
+
 
 #bg-vid {
 	position: fixed;
@@ -99,11 +118,11 @@ li, a, p, figcaption {
 
 
 #top-bar, 
+#social-bar, 
 header {
 	position: fixed;
 	width: 100%;
 	height: 50px;
-	background-color: hsla(0,0%,0%,0.80);
 }
 
 #top-bar {
@@ -111,6 +130,17 @@ header {
 	box-shadow: 2px 2px 6px #111;
 	animation-name: slideFromTop;
 	animation-duration: 1.35s;
+	background-color: hsla(0,0%,0%,0.80);
+}
+
+#social-bar {
+	bottom: 70px;
+	animation-name: slideFromBottom;
+	animation-duration: 1.35s;
+}
+
+#social-bar ul li {
+	padding: 20px;
 }
 
 header {
@@ -118,6 +148,7 @@ header {
 	box-shadow: -2px -2px 6px #111;
 	animation-name: slideFromBottom;
 	animation-duration: 1.35s;
+	background-color: hsla(0,0%,0%,0.80);
 }
 
 header nav ul li {
@@ -134,10 +165,21 @@ header nav ul li {
 
 
 
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width: 480px) {
 	header {
 		top: 0;
 		bottom: auto;
+		animation-name: slideFromTop;
 	}
 	
 	#top-bar {
@@ -148,6 +190,10 @@ header nav ul li {
 		padding: 0 10px;
 	}
 }
+
+
+
+
 
 
 
