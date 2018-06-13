@@ -75,6 +75,7 @@ li, a, p, figcaption {
 
 .fa {
 	color: white;
+	transition: all 0.5s linear;
 }
 
 .fa:hover {
@@ -153,12 +154,17 @@ header {
 
 header nav ul li {
 	padding: 0 20px;
+}
+
+header nav ul li a {
 	color: white;
 	font-size: 0.9rem;
 	font-weight: 200;
+	transition: all 0.25s linear;
 }
-
-
+header nav ul li a:hover {
+	opacity: 0.4;
+}
 
 
 
